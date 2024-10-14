@@ -47,10 +47,15 @@ class Wheel {
     startSpin() {
         if (!this.spinning) {
             this.spinning = true;
-            this.speed = radians(random(30, 50));
+            this.speed = radians(random(10, 30));
         }
     }
     spin() {
+        this.speed *= random(990, 996) / 1000;
+        if (this.speed < 0.001) {
+            this.spinning = false;
+            this.speed = 0;
+        }
         for (const segment of this.segments) {
             segment.spin(this.speed);
         }
