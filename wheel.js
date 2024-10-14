@@ -4,6 +4,8 @@ class Wheel {
         this.y = height / 2;
         this.radius = this.x * 0.9;
         this.segments = this._buildSegments(wheelSegmentsObj);
+        this.spinning = false;
+        this.speed = 0;
     }
     _buildSegments(wheelSegmentsObj) {
         push();
@@ -41,5 +43,16 @@ class Wheel {
         fill(0);
         triangle(this.x, y, this.x + 7, y - 30, this.x - 7, y - 30);
         pop();
+    }
+    startSpin() {
+        if (!this.spinning) {
+            this.spinning = true;
+            this.speed = radians(random(30, 50));
+        }
+    }
+    spin() {
+        for (const segment of this.segments) {
+            segment.spin(this.speed);
+        }
     }
 }

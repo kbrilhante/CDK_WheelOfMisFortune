@@ -15,4 +15,9 @@ function setup() {
 function draw() {
   background(50);
   wheel.show();
+  if (wheel.spinning) wheel.spin();
+}
+
+function mousePressed() {
+  wheel.startSpin();
 }

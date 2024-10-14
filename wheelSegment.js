@@ -15,9 +15,9 @@ class WheelSegment {
         stroke(0);
         fill(this.color);
         arc(this.x, this.y, this.radius, this.radius, this.startAngle, this.endAngle, PIE);
-
-        
-
-
+    }
+    spin(speed) {
+        this.startAngle += speed;
+        this.endAngle = this.startAngle + this.sliceSize;
     }
 }
