@@ -20,12 +20,13 @@ class WheelSegment {
         stroke(255)
         const angle = this.startAngle + this.sliceSize / 2;
         const vector = p5.Vector.fromAngle(angle);
-        vector.mult(this.radius * 0.6);
+        vector.mult(this.radius * 0.65);
         vector.add(this.x, this.y);
-        strokeWeight(2)
+        strokeWeight(4)
+        strokeJoin(BEVEL);
         stroke(0)
         fill(255);
-        textSize(20);
+        textSize(22);
         textAlign(CENTER, CENTER);
         let txt = "";
         if (this.type == "points") {
@@ -41,6 +42,12 @@ class WheelSegment {
     }
     spin(speed) {
         this.startAngle += speed;
+        if (this.startAngle >= PI * 2) this.startAngle -= PI * 2
         this.endAngle = this.startAngle + this.sliceSize;
+    }
+    isOnTop() {
+        const TOP = PI * 1.5;
+        if (this.startAngle <= TOP && this.endAngle >= TOP) return true
+        return false
     }
 }

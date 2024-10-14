@@ -60,4 +60,9 @@ class Wheel {
             segment.spin(this.speed);
         }
     }
+    getTopSegment() {
+        for (const segment of this.segments) {
+            if (segment.isOnTop()) return segment;
+        }
+    }
 }
