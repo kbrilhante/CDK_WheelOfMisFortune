@@ -1,0 +1,304 @@
+{
+    "categories": [
+      {
+        "name": "Animals",
+        "phrases": [
+          "Elephant",
+          "Giraffe",
+          "Kangaroo",
+          "Dolphin",
+          "Penguin",
+          "Hippopotamus",
+          "Cheetah",
+          "Koala",
+          "Polar Bear",
+          "Alligator",
+          "Chimpanzee",
+          "Zebra",
+          "Rhinoceros",
+          "Peacock",
+          "Orangutan",
+          "Arctic Fox",
+          "Siberian Tiger",
+          "Great White Shark",
+          "Red Panda",
+          "Bald Eagle"
+        ]
+      },
+      {
+        "name": "Movies",
+        "phrases": [
+          "The Matrix",
+          "Jurassic Park",
+          "Inception",
+          "Titanic",
+          "Star Wars",
+          "The Godfather",
+          "Pulp Fiction",
+          "The Dark Knight",
+          "Forrest Gump",
+          "Back to the Future",
+          "The Lord of the Rings",
+          "Avatar",
+          "Gladiator",
+          "The Shawshank Redemption",
+          "Schindler's List",
+          "Fight Club",
+          "The Silence of the Lambs",
+          "The Terminator",
+          "Braveheart",
+          "Good Will Hunting"
+        ]
+      },
+      {
+        "name": "Food",
+        "phrases": [
+          "Spaghetti",
+          "Chocolate Cake",
+          "Hamburger",
+          "Sushi",
+          "Apple Pie",
+          "Tacos",
+          "Lasagna",
+          "Cheeseburger",
+          "Chicken Alfredo",
+          "Buffalo Wings",
+          "Pizza Margherita",
+          "French Fries",
+          "Fish and Chips",
+          "Grilled Cheese",
+          "Caesar Salad",
+          "Lobster Bisque",
+          "Beef Stroganoff",
+          "Pad Thai",
+          "Creme Brulee",
+          "Miso Soup"
+        ]
+      },
+      {
+        "name": "Famous Landmarks",
+        "phrases": [
+          "Eiffel Tower",
+          "Great Wall of China",
+          "Statue of Liberty",
+          "Taj Mahal",
+          "Machu Picchu",
+          "Sydney Opera House",
+          "Big Ben",
+          "Mount Rushmore",
+          "Colosseum",
+          "Christ the Redeemer",
+          "Golden Gate Bridge",
+          "Niagara Falls",
+          "The Louvre",
+          "Petra",
+          "Mount Fuji",
+          "Stonehenge",
+          "Angkor Wat",
+          "Burj Khalifa",
+          "Sagrada Familia",
+          "The Great Sphinx"
+        ]
+      },
+      {
+        "name": "Books",
+        "phrases": [
+          "To Kill a Mockingbird",
+          "The Great Gatsby",
+          "Moby Dick",
+          "Pride and Prejudice",
+          "1984",
+          "The Catcher in the Rye",
+          "War and Peace",
+          "The Lord of the Rings",
+          "Harry Potter",
+          "The Hobbit",
+          "Jane Eyre",
+          "Wuthering Heights",
+          "Crime and Punishment",
+          "The Odyssey",
+          "The Brothers Karamazov",
+          "The Picture of Dorian Gray",
+          "Brave New World",
+          "The Scarlet Letter",
+          "The Divine Comedy",
+          "One Hundred Years of Solitude"
+        ]
+      },
+      {
+        "name": "Music Artists",
+        "phrases": [
+          "The Beatles",
+          "Elvis Presley",
+          "Michael Jackson",
+          "Madonna",
+          "Prince",
+          "Beyonce",
+          "Taylor Swift",
+          "Led Zeppelin",
+          "Queen",
+          "David Bowie",
+          "The Rolling Stones",
+          "Bob Dylan",
+          "Elton John",
+          "Whitney Houston",
+          "Adele",
+          "Rihanna",
+          "Billy Joel",
+          "Stevie Wonder",
+          "Bruce Springsteen",
+          "Kanye West"
+        ]
+      },
+      {
+        "name": "Countries",
+        "phrases": [
+          "United States",
+          "Canada",
+          "Brazil",
+          "Australia",
+          "India",
+          "China",
+          "Japan",
+          "Germany",
+          "France",
+          "United Kingdom",
+          "Mexico",
+          "Russia",
+          "South Africa",
+          "Argentina",
+          "Italy",
+          "Spain",
+          "South Korea",
+          "Saudi Arabia",
+          "Egypt",
+          "Thailand"
+        ]
+      },
+      {
+        "name": "Sports",
+        "phrases": [
+          "Soccer",
+          "Basketball",
+          "Baseball",
+          "Tennis",
+          "Golf",
+          "Cricket",
+          "Hockey",
+          "Rugby",
+          "Boxing",
+          "Martial Arts",
+          "Formula 1",
+          "American Football",
+          "Swimming",
+          "Track and Field",
+          "Cycling",
+          "Wrestling",
+          "Surfing",
+          "Skiing",
+          "Ice Skating",
+          "Gymnastics"
+        ]
+      },
+      {
+        "name": "Cities",
+        "phrases": [
+          "New York",
+          "Los Angeles",
+          "Paris",
+          "Tokyo",
+          "London",
+          "Berlin",
+          "Sydney",
+          "Rome",
+          "Dubai",
+          "Hong Kong",
+          "Moscow",
+          "Barcelona",
+          "Singapore",
+          "Istanbul",
+          "Buenos Aires",
+          "Toronto",
+          "San Francisco",
+          "Chicago",
+          "Rio de Janeiro",
+          "Cairo"
+        ]
+      }
+    ],
+    "wheel_segments": [
+      {
+        "type": "points",
+        "value": 100
+      },
+      {
+        "type": "points",
+        "value": 200
+      },
+      {
+        "type": "points",
+        "value": 300
+      },
+      {
+        "type": "points",
+        "value": 400
+      },
+      {
+        "type": "points",
+        "value": 500
+      },
+      {
+        "type": "bankrupt"
+      },
+      {
+        "type": "lose_a_turn"
+      },
+      {
+        "type": "points",
+        "value": 600
+      },
+      {
+        "type": "points",
+        "value": 700
+      },
+      {
+        "type": "points",
+        "value": 800
+      },
+      {
+        "type": "points",
+        "value": 900
+      },
+      {
+        "type": "points",
+        "value": 1000
+      },
+      {
+        "type": "points",
+        "value": 1100
+      },
+      {
+        "type": "points",
+        "value": 1200
+      },
+      {
+        "type": "points",
+        "value": 1300
+      },
+      {
+        "type": "bankrupt"
+      },
+      {
+        "type": "lose_a_turn"
+      },
+      {
+        "type": "points",
+        "value": 1400
+      },
+      {
+        "type": "points",
+        "value": 1500
+      }
+    ]
+  }
+  
