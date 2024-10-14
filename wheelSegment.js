@@ -10,6 +10,8 @@ class WheelSegment {
     }
     show() {
         // push();
+        strokeWeight(2);
+        stroke(0);
         fill(this.color);
         arc(this.x, this.y, this.radius, this.radius, this.startAngle, this.endAngle, PIE);
         // pop();
