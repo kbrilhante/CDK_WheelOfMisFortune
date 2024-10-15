@@ -1,5 +1,5 @@
 let wheelJSON;
-let wheel;
+let game;
 
 function preload() {
   wheelJSON = loadJSON("./wheel_EN.json");
@@ -9,15 +9,9 @@ function setup() {
   createCanvas(600, 600);
   ellipseMode(RADIUS);
   console.log(wheelJSON);
-  wheel = new Wheel(wheelJSON.wheel_segments);
+  game = new Game(wheelJSON);
 }
 
 function draw() {
   background(50);
-  wheel.show();
-  if (wheel.spinning) wheel.spin();
-}
-
-function mousePressed() {
-  wheel.startSpin();
 }
