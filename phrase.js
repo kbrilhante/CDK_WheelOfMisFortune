@@ -28,7 +28,7 @@ class Panel {
             blanks.push(new Letter(
                 this.phrase[i], 
                 gap + (w + gap) * i,
-                100, 
+                400, 
                 w,
                 h,
                 color(100 / this.phrase.length * i, SAT, LIGHT)
