@@ -8,7 +8,6 @@ function preload() {
 function setup() {
   createCanvas(600, 600);
   ellipseMode(RADIUS);
-  console.log(wheelJSON);
   game = new Game(wheelJSON);
 }
 
