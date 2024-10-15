@@ -14,4 +14,9 @@ function setup() {
 
 function draw() {
   background(50);
+  game.show();
+}
+
+function mousePressed() {
+  game.wheel.startSpin()
 }

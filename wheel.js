@@ -43,6 +43,7 @@ class Wheel {
         fill(0);
         triangle(this.x, y, this.x + 7, y - 30, this.x - 7, y - 30);
         pop();
+        if (this.spinning) this._spin();
     }
     startSpin() {
         if (!this.spinning) {
@@ -50,7 +51,7 @@ class Wheel {
             this.speed = radians(random(10, 30));
         }
     }
-    spin() {
+    _spin() {
         this.speed *= random(990, 996) / 1000;
         if (this.speed < 0.001) {
             this.spinning = false;
