@@ -12,8 +12,6 @@ class Wheel {
         const segments = [];
         const segmentsLength = wheelSegmentsObj.length;
         colorMode(HSL, 100);
-        const SAT = 100;
-        const LIGHT = 50;
         for (let i = 0; i < segmentsLength; i++) {
             const segment = wheelSegmentsObj[i];
             const sliceSize = PI * 2 / segmentsLength;

@@ -1,5 +1,9 @@
+const SAT = 100;
+const LIGHT = 50;
+
 let wheelJSON;
 let game;
+let aaaa;
 
 function preload() {
   wheelJSON = loadJSON("./wheel_EN.json");
