@@ -1,6 +1,7 @@
 class Panel {
     constructor(phrase) {
-        this.yPos = 400;
+        this.yPos = 100;
+        this.height = 0;
         this.phrase = phrase;
         this.blanks = this._getBlanks();
     }
@@ -23,6 +24,7 @@ class Panel {
                 color(100 / this.phrase.length * i, SAT, LIGHT)
             ));
         }
+        this.height = blanks[0].h;
         pop()
         return blanks;
     }
