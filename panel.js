@@ -1,6 +1,6 @@
 class Panel {
     constructor(phrase) {
-        this.yPos = 100;
+        this.yPos = 40;
         this.height = 0;
         this.phrase = phrase;
         this.blanks = this._getBlanks();
@@ -32,5 +32,8 @@ class Panel {
         for (const blank of this.blanks) {
             blank.show();
         }
+    }
+    getBottom() {
+        return this.yPos + this.height;
     }
 }

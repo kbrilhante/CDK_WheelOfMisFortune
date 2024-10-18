@@ -4,9 +4,9 @@ class Letter {
         this.value = letter.toUpperCase();
         this.revealed = !abc.includes(this.value);
         this.x = x;
-        this.y = y;
         this.w = w;
         this.h = h;
+        this.y = y + h / 2;
         this.color = color;
     }
     show() {

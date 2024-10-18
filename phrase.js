@@ -7,5 +7,13 @@ class Phrase {
     }
     show() {
         this.panel.show();
+        const catH = this.panel.getBottom() + 20;
+        push();
+        fill(255);
+        textSize(40);
+        textFont('Impact');
+        textAlign(CENTER, TOP);
+        text('Category: ' + this.category, width * 0.5, catH);
+        pop();
     }
 }
