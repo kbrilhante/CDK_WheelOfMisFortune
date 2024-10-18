@@ -8,7 +8,7 @@ class Game {
         return new Phrase(this.categories);
     }
     show() {
-        this.wheel.show();
+        // this.wheel.show();
         this.phrase.show();
     }
 }
