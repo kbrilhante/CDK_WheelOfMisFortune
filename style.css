@@ -9,3 +9,7 @@ body {
 canvas {
   display: block;
 }
+
+.btn {
+  background-color: greenyellow;
+}
