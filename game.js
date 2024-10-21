@@ -9,7 +9,7 @@ class Game {
         return new Phrase(this.categories);
     }
     _createLetterButtons() {
-        return new LetterButtons(this.phrase.getBottom());
+        return new LetterButtons();
     }
     show() {
         // this.wheel.show();
@@ -23,19 +23,18 @@ class Game {
 }
 
 class LetterButtons {
-    constructor(top) {
-        this.buttons = this._createButtons(top);
+    constructor() {
+        this.buttons = this._createButtons();
     }
-    _createButtons(top) {
+    _createButtons() {
         const abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-        const rows = 3;
+        const rows = 2;
         const cols = ceil(abc.length / rows);
         const gap = 6;
         const w = (width - gap * (cols + 1)) / cols;
-        console.log(w)
         const h = w;
         const buttons = [];
-        top += 40;
+        const top = width - (h + gap) * rows;
         let index = 0;
         for (let i = 0; i < rows; i++) {
             let y = top + (i * (h + gap));
@@ -71,18 +70,18 @@ class LetterButton {
         this.y = y;
         this.w = w;
         this.h = h;
-        this.val = val;
-        this.button = this.create();
+        this.button = this.create(val);
     }
-    create() {
-        const btn = createButton(this.val);
+    create(val) {
+        const btn = createButton(val);
         btn.position(this.x, this.y);
         btn.mousePressed(this.pressed);
         btn.size(this.w, this.h);
         btn.addClass("btn");
+        btn.value = val;
         return btn;
     }
     pressed() {
-        console.log(this);
+        console.log(this.value);
     }
 }

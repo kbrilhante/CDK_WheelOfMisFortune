@@ -11,5 +11,7 @@ canvas {
 }
 
 .btn {
-  background-color: greenyellow;
+  background-color: black;
+  color: #ffffff;
+  font-size: 18px;
 }
