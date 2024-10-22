@@ -20,17 +20,15 @@ class PlayerOptionsPanel {
             const btn = createButton(options[key]);
             btn.size(w, h);
             btn.position(gap, y);
-            btn.addClass('btn')
+            btn.addClass('btn');
+            btn.value = key;
+            btn.attribute('value', key);
+            btn.mousePressed(this.pressed);
+            console.log(btn)
+            this.buttons.push(btn);
         }
     }
+    pressed(e) {
+        console.log(e.target.value)
+    }
 }
-
-// class PlayerOption {
-//     constructor(x, y, w, h, val, txt) {
-//         this.x = x;
-//         this.y = y;
-//         this.w = w;
-//         this.h = h;
-//         this.button = this._createButton(val, txt)
-//     }
-// }

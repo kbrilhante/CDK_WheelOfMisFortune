@@ -11,7 +11,7 @@ class LetterButtons {
         const w = (width - gap * (cols + 1)) / cols;
         const h = w;
         const buttons = [];
-        const top = width - (h + gap) * rows - 140;
+        const top = width - (h + gap) * rows - 160;
         let index = 0;
         for (let i = 0; i < rows; i++) {
             let y = top + (i * (h + gap));
