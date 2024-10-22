@@ -21,7 +21,7 @@ class Panel {
                 this.yPos, 
                 w,
                 h,
-                color(100 / this.phrase.length * i, SAT, LIGHT)
+                color(100 / this.phrase.length * i, SAT, LIGHT + 20)
             ));
         }
         this.height = blanks[0].h;

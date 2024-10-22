@@ -4,6 +4,7 @@ class Game {
         this.categories = json.categories;
         this.phrase = this._pickPhrase();
         this.letterButtons = this._createLetterButtons();
+        this.playerOptionsPanel = this._createPlayerOptions();
     }
     _pickPhrase() {
         return new Phrase(this.categories);
@@ -12,12 +13,7 @@ class Game {
         return new LetterButtons();
     }
     _createPlayerOptions() {
-        const options = {
-            'spin': 'Spin the wheel',
-            'vowel': 'Buy a vowel',
-            'guess': 'Guess the word'
-        }
-
+        return new PlayerOptionsPanel();
     }
     show() {
         // this.wheel.show();
