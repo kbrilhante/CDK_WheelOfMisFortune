@@ -30,20 +30,29 @@ class LetterButtons {
                 const letter = abc[index];
                 const disabled = !this.availableLetters.includes(letter)
                 index++;
-                buttons.push(new LetterButton(
-                    x, 
-                    y,
-                    w,
-                    h,
-                    letter,
-                    disabled
-                ));
+                const btn = createButton(letter);
+                btn.value = letter;
+                btn.position(x, y);
+                btn.size(w, h);
+                btn.addClass('btn');
+                if (disabled) btn.attribute('disabled', true);
+                btn.mousePressed(this.pressed);
+                buttons.push(btn);
             }
         }
+        return buttons;
     }
     pickLetter(letter) {
         const index = this.availableLetters.indexOf(letter);
         this.availableLetters.splice(index, 1);
         console.log(this.availableLetters);
+    }
+    removeButtons() {
+        for (const btn of this.buttons) {
+            btn.button.remove()
+        }
+    }
+    pressed(e) {
+        console.log(e.target.textContent);
     }
 }

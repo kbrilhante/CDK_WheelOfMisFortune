@@ -15,7 +15,6 @@ class PlayerOptionsPanel {
         const h = 40;
         for (let i = 1; i <= keys.length; i++) {
             const key = keys[keys.length - i]
-            console.log(i, key)
             const y = height - (h + gap) * i
             const btn = createButton(options[key]);
             btn.size(w, h);
@@ -24,8 +23,12 @@ class PlayerOptionsPanel {
             btn.value = key;
             btn.attribute('value', key);
             btn.mousePressed(this.pressed);
-            console.log(btn)
             this.buttons.push(btn);
+        }
+    }
+    removeButtons() {
+        for (const btn of this.buttons) {
+            btn.remove();
         }
     }
     pressed(e) {
