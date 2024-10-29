@@ -1,7 +1,7 @@
 class Player {
     constructor(name) {
         this._name = name;
-        this._balance = 0;
+        this._balance = 1000;
         this._totalBalance = 0;
     }
     getName() {

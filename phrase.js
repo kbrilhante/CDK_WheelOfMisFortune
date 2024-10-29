@@ -10,7 +10,7 @@ class Phrase {
         const pannelBottom = this.panel.getBottom() + 20;
         push();
         fill(255);
-        textSize(40);
+        textSize(30);
         textFont(FONT);
         textAlign(CENTER, TOP);
         text('Category: ' + this.category, width * 0.5, pannelBottom);

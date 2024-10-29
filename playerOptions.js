@@ -1,8 +1,8 @@
 class PlayerOptionsPanel {
-    constructor() {
-        this.buttons = this.createButtons();
+    constructor(isVowelEnabled) {
+        this.buttons = this.createButtons(isVowelEnabled);
     }
-    createButtons() {
+    createButtons(isVowelEnabled) {
         const options = {
             'spin': 'Spin the wheel',
             'vowel': 'Buy a vowel',
@@ -22,6 +22,7 @@ class PlayerOptionsPanel {
             btn.addClass('btn');
             btn.value = key;
             btn.attribute('value', key);
+            if (!isVowelEnabled && key == 'vowel') btn.attribute('disabled', true);
             btn.mousePressed(this.pressed);
             buttons.push(btn);
         }

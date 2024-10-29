@@ -29,7 +29,7 @@ class Game {
         return new LetterButtons();
     }
     _createPlayerOptions() {
-        return new PlayerOptionsPanel();
+        return new PlayerOptionsPanel(this.currentPlayer.getBalance() >= 200);
     }
     show() {
         // this.wheel.show();
