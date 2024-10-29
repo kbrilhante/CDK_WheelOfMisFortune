@@ -31,10 +31,11 @@ class LetterButtons {
                 const disabled = !this.availableLetters.includes(letter)
                 index++;
                 const btn = createButton(letter);
-                btn.value = letter;
                 btn.position(x, y);
                 btn.size(w, h);
                 btn.addClass('btn');
+                btn.value = letter;
+                btn.attribute('value', letter);
                 if (disabled) btn.attribute('disabled', true);
                 btn.mousePressed(this.pressed);
                 buttons.push(btn);

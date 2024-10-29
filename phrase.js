@@ -11,7 +11,7 @@ class Phrase {
         push();
         fill(255);
         textSize(40);
-        textFont('Impact');
+        textFont(FONT);
         textAlign(CENTER, TOP);
         text('Category: ' + this.category, width * 0.5, pannelBottom);
         strokeWeight(10);

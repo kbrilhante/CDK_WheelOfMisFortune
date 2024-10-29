@@ -28,6 +28,7 @@ class WheelSegment {
         fill(255);
         textSize(22);
         textAlign(CENTER, CENTER);
+        textFont(FONT)
         let txt = "";
         if (this.type == "points") {
             txt = this.value;

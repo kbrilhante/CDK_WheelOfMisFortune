@@ -1,5 +1,6 @@
 const SAT = 100;
 const LIGHT = 50;
+const FONT = "Lucida Console"
 
 let wheelJSON;
 let game;

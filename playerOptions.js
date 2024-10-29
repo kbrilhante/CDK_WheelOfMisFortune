@@ -1,7 +1,6 @@
 class PlayerOptionsPanel {
     constructor() {
-        this.buttons = [];
-        this.createButtons();
+        this.buttons = this.createButtons();
     }
     createButtons() {
         const options = {
@@ -9,6 +8,7 @@ class PlayerOptionsPanel {
             'vowel': 'Buy a vowel',
             'guess': 'Guess the word'
         };
+        const buttons = [];
         const keys = Object.keys(options);
         const gap = 6;
         const w = width - gap * 2;
@@ -23,13 +23,17 @@ class PlayerOptionsPanel {
             btn.value = key;
             btn.attribute('value', key);
             btn.mousePressed(this.pressed);
-            this.buttons.push(btn);
+            buttons.push(btn);
         }
+        return buttons;
     }
     removeButtons() {
         for (const btn of this.buttons) {
             btn.remove();
         }
+    }
+    getTopY() {
+        return this.buttons[this.buttons.length - 1].y
     }
     pressed(e) {
         console.log(e.target.value)
