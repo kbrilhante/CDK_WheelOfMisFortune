@@ -28,7 +28,7 @@ class PlayerOptionsPanel {
         }
         return buttons;
     }
-    removeButtons() {
+    remove() {
         for (const btn of this.buttons) {
             btn.remove();
         }
@@ -37,6 +37,16 @@ class PlayerOptionsPanel {
         return this.buttons[this.buttons.length - 1].y
     }
     pressed(e) {
-        console.log(e.target.value)
+        switch (e.target.value) {
+            case 'spin':
+                game.spinWheel();
+                break;
+            case 'vowel':
+                game.buyVowel();
+                break;
+            case 'guess':
+                game.guessWord();
+                break;
+        }
     }
 }

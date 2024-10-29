@@ -22,5 +22,5 @@ function draw() {
 }
 
 function mousePressed() {
-  game.wheel.startSpin()
+  game.spin()
 }

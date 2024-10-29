@@ -32,10 +32,15 @@ class Game {
         return new PlayerOptionsPanel(this.currentPlayer.getBalance() >= 200);
     }
     show() {
-        // this.wheel.show();
-        if (this.screen == 'playerTurn') {
-            this._showPlayerStats();
-            this.phrase.show();
+        switch (this.screen) {
+            case 'playerTurn':
+                this._showPlayerStats();
+                this.phrase.show();
+                break;
+            case 'wheel':
+                this.playerOptionsPanel.remove()
+                this.wheel.show();
+                break;
         }
     }
     _showPlayerStats() {
@@ -56,6 +61,18 @@ class Game {
         writeText(txt, 10, y, txtSize);
         y -= 14;
         drawLine(y);
+    }
+    spinWheel() {
+        this.screen = 'wheel'
+    }
+    buyVowel() {
+        console.log("Buying vowel")
+    }
+    guessWord() {
+        console.log("I guess it's fart")
+    }
+    spin() {
+        if (this.screen == 'wheel') this.wheel.startSpin();
     }
 }
 
