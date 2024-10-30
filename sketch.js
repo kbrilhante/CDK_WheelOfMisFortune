@@ -21,6 +21,6 @@ function draw() {
   game.show();
 }
 
-function mousePressed() {
-  game.spin()
-}
+// function mousePressed() {
+//   game.spin()
+// }
